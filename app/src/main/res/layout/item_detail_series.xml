@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="model"
+            type="com.goda.marvel.model.CESSResult" />
+
+
+
+        <variable
+            name="callback"
+            type="com.goda.marvel.presentation.main.character_detail.callback.SeriesDetailsCallback" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarTransparent"
+        android:clipToPadding="false"
+
+        android:onClick="@{()->callback.onClickedSeries(model)}"
+        android:paddingBottom="@dimen/margin_xxx">
+
+        <ImageView
+            android:id="@+id/imageDetail"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            tools:background="@drawable/testimg"
+            android:scaleType="centerCrop"
+            app:image="@{model.thumbnail}"
+            android:src="@drawable/ic_broken_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xxx"
+            android:gravity="center"
+            android:paddingStart="@dimen/margin_xxx"
+            android:paddingEnd="@dimen/margin_xxx"
+            android:text="@{model.title}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintTop_toBottomOf="@+id/imageDetail"
+            tools:text="Avengers: The Initiative (2007) #19" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Marvel App</string>
+
+    <string name="price_alts">%1$s USD\n%2$s BTC</string>
+    <string name="price_btc">%1$s USD</string>
+    <string name="change_percent">%1$s</string>
+    <string name="error_occurred">The server is down, please try again later</string>
+    <string name="no_connection">No Internet Connection</string>
+    <string name="time_out_message">Looks like the server is taking to long to respond, this can be caused by either  poor connectivity or an error with our servers. Please try again in a while</string>
+    <string name="name">Name</string>
+    <string name="Description">Description</string>
+    <string name="comics">Comics</string>
+    <string name="series">Series</string>
+    <string name="stories">Stories</string>
+    <string name="events">Events</string>
+    <string name="related">Related Links</string>
+    <string name="detail">Detail</string>
+    <string name="wiki">Wiki</string>
+    <string name="comikLink">ComicLink</string>
+    <string name="search">search</string>
+    <string name="cancel">Cancel</string>
+    <string name="characterList">characters</string>
+    <string name="CESSResult">cessrs</string>
+    <string name="CESSResults">cessrslist</string>
+</resources>

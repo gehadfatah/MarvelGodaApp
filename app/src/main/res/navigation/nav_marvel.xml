@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_marvel"
+    app:startDestination="@id/charcterListFragmnt">
+    <fragment
+        android:id="@+id/charcterListFragmnt"
+        android:name="com.goda.marvel.presentation.main.character_list.CharacterListFragment"
+        android:label="@string/characterList"
+        tools:layout="@layout/character_list_fragment">
+        <action
+            android:id="@+id/action_characters_to_search"
+            app:destination="@+id/searchFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_characters_to_detail"
+            app:destination="@+id/detailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.goda.marvel.presentation.main.searchCharachter.SearchListFragment"
+        android:label="@string/search"
+        tools:layout="@layout/search_fragment">
+        <action
+            android:id="@+id/action_search_to_list"
+            app:destination="@+id/charcterListFragmnt"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_search_to_detail"
+            app:destination="@+id/detailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.goda.marvel.presentation.main.character_detail.CharacterDetailFragment"
+        android:label="@string/search"
+        tools:layout="@layout/charchter_detail_fragment">
+        <action
+            android:id="@+id/action_detail_to_list_characters"
+            app:destination="@+id/charcterListFragmnt"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_detail_to_cessResultListsFragment"
+            app:destination="@+id/cessResultListsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <argument android:name="characterDetail"
+            app:argType="com.goda.marvel.model.Character"
+          />
+    </fragment>
+    <fragment
+        android:id="@+id/cessResultListsFragment"
+        android:name="com.goda.marvel.presentation.main.listPagerDetail.CessResultListsFragment"
+        android:label="CessResultsFragment"
+        tools:layout="@layout/fragment_all_cessresult">
+        <action
+            android:id="@+id/action_cessResultListsFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+</navigation>
