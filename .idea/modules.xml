@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MarvelGodaApp.iml" filepath="$PROJECT_DIR$/MarvelGodaApp.iml" group="MarvelGodaApp" />
-      <module fileurl="file://$PROJECT_DIR$/app/MarvelGodaApp-app.iml" filepath="$PROJECT_DIR$/app/MarvelGodaApp-app.iml" group="MarvelGodaApp/app" />
-      <module fileurl="file://$PROJECT_DIR$/Marvel_app.iml" filepath="$PROJECT_DIR$/Marvel_app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/Marvel_app-app.iml" filepath="$PROJECT_DIR$/app/Marvel_app-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fork.iml" filepath="$PROJECT_DIR$/fork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MarvelGodaApp.iml" filepath="$PROJECT_DIR$/.idea/modules/MarvelGodaApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MarvelGodaApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MarvelGodaApp.app.iml" />
     </modules>
   </component>
 </project>
